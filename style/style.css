@@ -1,0 +1,287 @@
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #2b2b2b;
+    line-height: 1.6;
+}
+
+h1, h2, strong {
+    font-weight: 500;
+}
+
+/*
+    General Layout Set up
+*/
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 200px minmax(200px,auto);
+    min-height: 100vh;
+}
+
+.navigation-bar-container {
+    background-color: #1F2932;
+    width: 200px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.navigation-link {
+    margin-top: 50px;
+    font-size: 1.2rem;
+    line-height: 2.5;
+}
+
+.navigation-link nav {
+    /* padding: 5px 25px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-link nav li{
+    list-style: none;
+    cursor: pointer;
+    color: white;
+}
+
+.navigation-link nav li:hover{
+    color: #02B3E4
+}
+
+/*
+    button
+*/
+
+.button {
+    background-color:#fd8e0e;
+    color: white ;
+    border-radius: 6px;
+    border: 0px solid ;
+    outline: none;
+    display: inline-block;
+    cursor: pointer ;
+    font-weight: bold;
+    width: 100% ;
+    height: 40px ;
+    /* padding: 0.7rem 36px; */
+    text-transform: uppercase ;
+}
+
+.button:hover {
+    background-color:#ffa136;
+}
+
+.button:active {
+    position: relative;
+    top: 1px;
+}
+
+.button-container {
+    margin-top: 30px;
+    padding: 0px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.second-button {
+    margin-top: 15px;
+    background-color: white;
+    color: black;
+}
+
+.second-button:hover {
+    background-color:white;
+}
+
+.bottom-button{ 
+    width: 250px;
+}
+
+.bottom-button-a {
+    position: absolute ;  
+    bottom: 20px;
+}
+
+/*
+    Body
+*/
+
+.article-container {
+    /* display: grid;
+    grid-template-rows: 120px minmax(300px,auto); 
+    justify-content: center;
+    justify-content: stretch;
+    align-items: stretch; */
+    /* padding: 75px 30px; */
+    margin: 1rem 2rem;
+}
+
+.Title {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.bold-title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.blue {
+    color: rgb(14, 156, 175);
+}
+
+.body-container {
+    display: grid;
+    gap: 20px 20px;
+    grid-template-areas: "blog blog blog";
+}
+
+.body-content {
+    width:450px;
+    height: 500px;
+    background-color: rgb(226, 226, 226);
+    grid-area: "blog";
+    padding: 20px 20px;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.linkable {
+    text-decoration: none;
+}
+
+/*
+    img
+*/
+
+.blog-imgae {
+    width: 100%;
+    height: 220px;
+}
+
+/*
+    footer
+*/
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    width: 100%;
+    height: 50px;
+    background-color:#1F2932;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 40rem) {
+    .logo {
+        width: 60px;
+    }
+    .navigation-link {
+        /* margin-top: 50px; */
+        font-size: 0.9rem;
+        line-height: 2rem;
+    }
+    
+    .navigation-link nav li{
+        list-style: none;
+        cursor: pointer;
+        color: white;
+    }
+
+    .button {
+        width: 100%;
+        height: 30px;
+        font-size: 0.5rem;
+    }
+
+    .bottom-button{
+        width: 150px;
+    }
+
+    .navigation-bar-container {
+        width: 150px;
+    }
+
+    .article-container {
+        margin-bottom: 5rem;
+    }
+
+    .Title {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .content-container {
+        grid-template-columns: 130px minmax(200px,auto);
+    }
+    
+    .bold-title {
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .body-container {
+        display: grid;
+        gap: 20px 20px;
+        grid-template-areas: "blog"
+                             "blog"
+                             "blog";
+    } 
+
+    .body-content {
+        width:300px;
+        height: 380px;
+    }
+
+    .bold-title {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .blog-imgae {
+        width: 100%;
+        height: 150px;
+    }
+
+    .body-description {
+        font-size: 0.7rem;
+    }
+    
+}
+
+@media (min-width: 600px) and (max-width: 900px){
+    .logo {
+        width: 80px;
+    }
+
+    .Title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+}
+

@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+blog
+*/
+
+.author-container {
+    width: 75rem;
+    margin: 2rem 3rem;
+    background-color:whitesmoke;
+    padding: 3rem 3rem;
+    border-radius: 1rem;
+}
+
+
+
+.blog-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.blog-img-post {
+    width: 1000px;
+    height: auto;
+}
+
+.avatat-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.avatar-pic {
+    margin-right: 1.5rem;
+}
+
+.avatar-pic {
+    border-radius: 50%;
+    width:60px;
+    height: 60px;
+    background-image: url("../img/author.png");
+    background-size: cover;
+}
+
+.description-text {
+    margin-bottom: 1rem;
+}
+
+
+/*
+    social
+*/
+
+.social-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.social-container p {
+    margin-right: 2rem;
+    color: seagreen;
+}
+
+.social-icons img{
+    margin-right: 0.7rem;
+}
+
+.intro-name {
+    font-size: 0.9rem;
+}
+
+.description-text {
+    font-size: 1.2rem;
+}
+
+/*
+    body
+*/
+
+.body-container {
+
+}
+
+.body-option {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.body-option h1 {
+    margin-bottom: 1rem;
+}
+
+.order-list {
+    padding: 0 3rem;
+}
+
+.order-list > *{
+    margin-bottom: 0.7rem;    
+}
+
+/*
+    footer
+*/
+
+.footer {
+    font-size: 14px;
+    width: 100%;
+    height: 50px;
+    background-color:#1F2932;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:40rem) {
+    .author-container {
+        margin: 0rem 0rem;
+        width: 500px;
+    }
+
+    .avatar-pic {
+        width: 30px;
+        height: 30px;
+    }
+
+    .blog-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .intro-name {
+        font-size: 0.7rem;
+    }
+    
+    .description-text {
+        font-size: 1rem;
+    }
+
+    .body-option h1 {
+        font-size: 1.5rem;
+    }
+    
+    .blog-img-post {
+        width: 350px;
+    }
+
+    .social-container p {
+        margin-right: 0.7rem;
+        font-size: 0.7rem;
+    }
+    
+    .social-icons img{
+        margin-right: 0.5rem;
+        width: 1.5rem;
+    }
+}
+
+/* @media (min-width:600px) and (max-width) {
+
+} */
