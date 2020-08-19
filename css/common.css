@@ -14,3 +14,7 @@ body {
 h1, h2, strong {
     font-weight: 500;
 }
+
+.blue {
+    color: rgb(14, 156, 175);
+}
